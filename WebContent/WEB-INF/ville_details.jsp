@@ -14,7 +14,7 @@
 		<form method="post" action="PutVille">
 			
 			Code INSEE :  		
-			<input type="text" name="codeInsee" value="${ ville.getCodeInsee() }"/><br>		
+			<input type="text" name="codeInsee" value="${ ville.getCodeInsee() } " /><br>		
 			
 			Nom :  		
 			<input type="text" name="nom" value="${ ville.getNom() }"/><br>		
