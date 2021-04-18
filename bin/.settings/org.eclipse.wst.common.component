@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-            
-    
-    <wb-module deploy-name="ESEO_API_REST_CLIENT-0.0.1-SNAPSHOT">
-        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
-                        
         
+    <wb-module deploy-name="javaee-organigramme">
+                
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-                        
-        
+                
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-                        
-        
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/"/>
+                
+        <property name="context-root" value="javaee-organigramme"/>
+                
         <property name="java-output-path" value="/javaee-organigramme/build/classes"/>
-        <property name="context-root" value="ESEO_API_REST_CLIENT"/>
-                    
-    
+            
     </wb-module>
-        
-
+    
 </project-modules>

@@ -1,0 +1,187 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ESEO_API_REST_CLIENT</groupId>
+  <artifactId>ESEO_API_REST_CLIENT</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+  <dependencies>
+<!--
+ https://mvnrepository.com/artifact/org.webjars/bootstrap-table 
+-->
+<dependency>
+<groupId>org.webjars</groupId>
+<artifactId>bootstrap-table</artifactId>
+<version>1.9.1</version>
+</dependency>
+<!--
+ https://mvnrepository.com/artifact/javax.servlet/servlet-api 
+-->
+<dependency>
+<groupId>javax.servlet</groupId>
+<artifactId>servlet-api</artifactId>
+<version>2.5</version>
+<scope>provided</scope>
+</dependency>
+<!--
+ https://mvnrepository.com/artifact/org.springframework/spring-core 
+-->
+<dependency>
+<groupId>org.springframework</groupId>
+<artifactId>spring-core</artifactId>
+<version>2.5.6</version>
+</dependency>
+<!--
+ https://mvnrepository.com/artifact/org.springframework/spring-beans 
+-->
+<dependency>
+<groupId>org.springframework</groupId>
+<artifactId>spring-beans</artifactId>
+<version>5.3.3</version>
+</dependency>
+<!--
+ https://mvnrepository.com/artifact/javax.servlet/jstl 
+-->
+<dependency>
+<groupId>javax.servlet</groupId>
+<artifactId>jstl</artifactId>
+<version>1.2</version>
+</dependency>
+<!--
+ https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-core-asl 
+-->
+<dependency>
+<groupId>org.codehaus.jackson</groupId>
+<artifactId>jackson-core-asl</artifactId>
+<version>1.9.13</version>
+</dependency>
+<!--
+ https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-jaxrs 
+-->
+<dependency>
+<groupId>org.codehaus.jackson</groupId>
+<artifactId>jackson-jaxrs</artifactId>
+<version>1.9.13</version>
+</dependency>
+<!--
+ https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-mapper-asl 
+-->
+<dependency>
+<groupId>org.codehaus.jackson</groupId>
+<artifactId>jackson-mapper-asl</artifactId>
+<version>1.9.13</version>
+</dependency>
+<!--
+ https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-xc 
+-->
+<dependency>
+<groupId>org.codehaus.jackson</groupId>
+<artifactId>jackson-xc</artifactId>
+<version>1.9.13</version>
+</dependency>
+<!--
+ https://mvnrepository.com/artifact/com.sun.jersey/jersey-client 
+-->
+<dependency>
+<groupId>com.sun.jersey</groupId>
+<artifactId>jersey-client</artifactId>
+<version>1.19</version>
+</dependency>
+<!--
+ https://mvnrepository.com/artifact/com.sun.jersey/jersey-core 
+-->
+<dependency>
+<groupId>com.sun.jersey</groupId>
+<artifactId>jersey-core</artifactId>
+<version>1.19</version>
+</dependency>
+<!--
+ https://mvnrepository.com/artifact/com.sun.jersey/jersey-json 
+-->
+<dependency>
+<groupId>com.sun.jersey</groupId>
+<artifactId>jersey-json</artifactId>
+<version>1.19</version>
+</dependency>
+<!--
+ https://mvnrepository.com/artifact/com.sun.jersey/jersey-server 
+-->
+<dependency>
+<groupId>com.sun.jersey</groupId>
+<artifactId>jersey-server</artifactId>
+<version>1.19</version>
+</dependency>
+<!--
+ https://mvnrepository.com/artifact/com.sun.jersey/jersey-servlet 
+-->
+<dependency>
+<groupId>com.sun.jersey</groupId>
+<artifactId>jersey-servlet</artifactId>
+<version>1.19</version>
+</dependency>
+<!--
+ https://mvnrepository.com/artifact/org.codehaus.jettison/jettison 
+-->
+<dependency>
+<groupId>org.codehaus.jettison</groupId>
+<artifactId>jettison</artifactId>
+<version>1.1</version>
+</dependency>
+<!--
+ https://mvnrepository.com/artifact/javax.ws.rs/jsr311-api 
+-->
+<dependency>
+<groupId>javax.ws.rs</groupId>
+<artifactId>jsr311-api</artifactId>
+<version>1.1.1</version>
+</dependency>
+<!--
+ https://mvnrepository.com/artifact/org.projectlombok/lombok 
+-->
+<dependency>
+<groupId>org.projectlombok</groupId>
+<artifactId>lombok</artifactId>
+<version>1.18.18</version>
+<scope>provided</scope>
+</dependency>
+
+<dependency>
+  <groupId>org.apache.lucene</groupId>
+  <artifactId>lucene-spatial</artifactId>
+  <version>8.2.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/jstl/jstl -->
+<dependency>
+<groupId>jstl</groupId>
+<artifactId>jstl</artifactId>
+<version>1.2</version>
+</dependency>
+</dependencies>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>15</release>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.3</version>
+        <configuration>
+          <warSourceDirectory>WebContent</warSourceDirectory>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

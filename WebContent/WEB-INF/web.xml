@@ -1,40 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://java.sun.com/xml/ns/javaee"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-	version="3.0">
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+   http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
 
 
 	<servlet>
-		<servlet-name>HomePageServlet</servlet-name>
-		<servlet-class>com.organigramme.servlets.HomePageServlet</servlet-class>
+		<servlet-name>GetAllVilles</servlet-name>
+		<servlet-class>com.servlets.GetAllVilles</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>HomePageServlet</servlet-name>
-		<url-pattern>/</url-pattern>
+		<servlet-name>GetAllVilles</servlet-name>
+		<url-pattern>/villes</url-pattern>
 	</servlet-mapping>
-
+	
 	<servlet>
-		<servlet-name>EmployeeDetailsServlet</servlet-name>
-		<servlet-class>com.organigramme.servlets.EmployeeDetailsServlet</servlet-class>
+		<servlet-name>GetVilleByParameter</servlet-name>
+		<servlet-class>com.servlets.GetVilleByParameter</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>EmployeeDetailsServlet</servlet-name>
-		<url-pattern>/employee-details</url-pattern>
+		<servlet-name>GetVilleByParameter</servlet-name>
+		<url-pattern>/details</url-pattern>
 	</servlet-mapping>
-
+	
 	<servlet>
-		<servlet-name>ConnectionServlet</servlet-name>
-		<servlet-class>com.organigramme.servlets.ConnectionServlet</servlet-class>
+		<servlet-name>CompareVilles</servlet-name>
+		<servlet-class>com.servlets.CompareVilles</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>ConnectionServlet</servlet-name>
-		<url-pattern>/connection</url-pattern>
+		<servlet-name>CompareVilles</servlet-name>
+		<url-pattern>/compare</url-pattern>
 	</servlet-mapping>
-
 	<jsp-config>
         <jsp-property-group>
             <url-pattern>*.jsp</url-pattern>
